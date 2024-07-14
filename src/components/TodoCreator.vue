@@ -11,7 +11,9 @@ import { ref, defineEmits } from 'vue'
 const emit = defineEmits(['create-todo'])
 const todo = ref('')
 
-const createTodo = () => {}
+const createTodo = () => {
+  emit('create-todo', todo.value)
+}
 </script>
 
 <style lang="scss">
