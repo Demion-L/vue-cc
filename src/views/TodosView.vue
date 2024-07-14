@@ -6,8 +6,10 @@
 </template>
 
 <script setup>
-import TodoCreator from '../components/TodoCreator.vue'
+import { ref } from 'vue'
 import { uid } from 'uid'
+
+import TodoCreator from '../components/TodoCreator.vue'
 
 const todoList = ref([])
 
